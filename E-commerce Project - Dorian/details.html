@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Laptops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 logo">
+                <a href="index.html"><img src="./icons/logo.png" /></a>
+            </div>
+            <div class="col-4">
+                <div class="row wrapper">
+                    <div class="col-3">
+                        <div class="cart">
+                            <a href="cart.html">
+                                <i class="fas fa-shopping-cart menu-icon"></i>CART<span class="cart-info"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="admin">
+                            <a href="admin.html">
+                                <i class="fas fa-user-cog menu-icon"></i>ADMIN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html"
+                                        id="products">ASUS</a></li>
+                                <li><a class="dropdown-item" href="index.html"
+                                        id="products">LENOVO</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html"
+                                        id="products">LG</a></li>
+                                <li><a class="dropdown-item" href="index.html"
+                                        id="products">HP</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="product-details"></div>
+    </div>
+    <footer class="bg-dark text-center text-white footer">
+        <div class="container p-4">
+            <div class="social-media-container">
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://twitter.com/?lang=en"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.google.com/"
+                    role="button"><i class="fab fa-google"></i></a>
+                </div>
+                <div class="footer-details">
+                    <div class="transport">
+                        <i class="fas fa-shuttle-van"></i>
+                        <h4>Free Transport</h4>
+                        <p>For orders larger than 100€</p>
+                    </div>
+                    <div class="warranty">
+                        <i class="fa fa-recycle"></i>
+                        <h4>Warranty</h4>
+                        <p>All products have a warranty of up to 48 months</p>
+                    </div>
+                    <div class="payment">
+                        <i class="far fa-credit-card"></i>
+                        <h4>Payment</h4>
+                        <p>You can pay online with the help of a debit card</p>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Support</h4>
+                        <p>We provide support and advice</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © amazing-laptops.com
+                        All rights reserved</p>
+                </div>
+                </div>
+   </footer>
+   <script src="./src/details.js"></script>   
+</body>
+</html>
