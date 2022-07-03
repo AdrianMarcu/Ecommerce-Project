@@ -5,212 +5,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Laptops</title>
+    <link rel="icon" type="image/x-icon" href="./icons/logo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Laptop Shop</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-8 logo">
-                <a href="index.html"> <img src="./icons/logo.png"></a>
-            </div>
-            <div class="col-4">
-                <div class="row wrapper">
-                    <div class="col-3">
+        <a href="index.html"> <img src="./icons/logo.png" /></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: lightblue">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./icons/logo.png" height="50" alt="Best-Brand">
+                </a>
 
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">INDEX</a>
+                        <i class="fa-solid fa-indent"></i>
+                        <a href="cart.html" class="nav-item nav-link">CART</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                        <i class="fa-solid fa-address-book"></i>
+                        <a href="admin.html" class="nav-item nav-link">ADMIN</a>
+                        <i class="fa-solid fa-lock"></i>
+                        <a href="details.html" class="nav-item nav-link">DETAILS</a>
+                        <i class="fa-solid fa-asterisk"></i>
+                        <form class="d-flex ms-auto">
+                            <input type="text" class="form-control me-sm-2" placeholder="Search">
+                            <button type="submit" class="btn btn-outline-primary">Search</button>
+                        </form>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="admin">
-                        <a href="admin.html">
-                            <i class="fas fa-user-cog menu-icon"></i>ADMIN
-                        </a>
-                    </div>
+            </div>
+    </div>
+    </nav>
+    <br>
+    <div class="products-container">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 1.jpeg" alt="Product Image">
+                <h5 class="card-title">ASUS</h5>
+                <p class="card-text price">2400.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=1" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="1" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 2.jpeg" alt="Product Image">
+                <h5 class="card-title">HP</h5>
+                <p class="card-text price">2900.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=2" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="2" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 3.jpeg" alt="Product Image">
+                <h5 class="card-title">ACER</h5>
+                <p class="card-text price">2200.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=3" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="3" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 4.jpeg" alt="Product Image">
+                <h5 class="card-title">TOSHIBA</h5>
+                <p class="card-text price">3000.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=4" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="4" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 5.jpeg" alt="Product Image">
+                <h5 class="card-title">DELL</h5>
+                <p class="card-text price">4000.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=5" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="5" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 6.jpeg" alt="Product Image">
+                <h5 class="card-title">DELL</h5>
+                <p class="card-text price">5000.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=6" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="6" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 7.jpeg" alt="Product Image">
+                <h5 class="card-title">ASUS</h5>
+                <p class="card-text price">3500.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=7" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="7" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 8.jpeg" alt="Product Image">
+                <h5 class="card-title">ACER</h5>
+                <p class="card-text price">4500.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=8" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="8" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 9.jpeg" alt="Product Image">
+                <h5 class="card-title">HP</h5>
+                <p class="card-text price">6000.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=9" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="9" class="main-btn btn-responsive">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img img-fluid" src="./pictures/Laptop 10.jpeg" alt="Product Image">
+                <h5 class="card-title">ASUS</h5>
+                <p class="card-text price">7600.00 €</p>
+                <div class="buttons">
+                    <a href="details.html?product-id=10" class="main-btn btn-responsive" role="button">Details</a>
+                    <button data-product-id="10" class="main-btn btn-responsive">Add to cart</button>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
-                        </a>
+    </<div>
+    <footer class="bg-dark text-center text-white footer">
+        <div class="container p-4">
+            <div class="social-media-container">
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
 
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://twitter.com/?lang=en"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <div class="footer-details">
+                    <div class="transport">
+                        <i class="fas fa-shuttle-van"></i>
+                        <h4>Free Transport</h4>
+                        <p>For orders larger than 1000€</p>
                     </div>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-
-                <form class="d-flex" form_signature="317562581425903422">
-                    <input class="form-control me-2" type="search" id="search-bar" placeholder="Search"
-                        aria-label="Search" field_signature="1415896427" form_signature="317562581425903422"
-                        visibility_annotation="true">
-                    <!-- <button class="btn btn-outline-success" id = "search-button" type="submit">Search</button> -->
-                </form>
-            </div>
-        </div>
-    </nav>
-    <div class="products-container">
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 1.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">ASUS</h5>
-                <p class="card-text d-flex justify-content-center">3000.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=1" class="main-btn">Details</a>
-                    <button data-product-id="1" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 2.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">LENOVO</h5>
-                <p class="card-text d-flex justify-content-center">2500.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=2" class="main-btn">Details</a>
-                    <button data-product-id="2" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 3.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">LG</h5>
-                <p class="card-text d-flex justify-content-center">2400.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=3" class="main-btn">Details</a>
-                    <button data-product-id="3" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 4.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">ASUS</h5>
-                <p class="card-text d-flex justify-content-center">4500.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=4" class="main-btn">Details</a>
-                    <button data-product-id="4" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 5.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">LG</h5>
-                <p class="card-text d-flex justify-content-center">2500.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=5" class="main-btn">Details</a>
-                    <button data-product-id="5" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 6.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">LENOVO</h5>
-                <p class="card-text d-flex justify-content-center">2700.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=6" class="main-btn">Details</a>
-                    <button data-product-id="6" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 7.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">ASUS</h5>
-                <p class="card-text d-flex justify-content-center">2000.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=7" class="main-btn">Details</a>
-                    <button data-product-id="7" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 8.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">LENOVO</h5>
-                <p class="card-text d-flex justify-content-center">9700.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=8" class="main-btn">Details</a>
-                    <button data-product-id="8" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 9.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">HP</h5>
-                <p class="card-text d-flex justify-content-center">1000.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=9" class="main-btn">Details</a>
-                    <button data-product-id="9" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body sm">
-                <img class="card-img img-fluid" src="./pictures/Laptop 10.jpeg" alt="Product Image">
-                <h5 class="card-title d-flex justify-content-center" style="font-size: 1rem;">HP</h5>
-                <p class="card-text d-flex justify-content-center">5000.00 €</p>
-                <div class="buttons">
-                    <a href="details.html?product-id=10" class="main-btn">Details</a>
-                    <button data-product-id="10" class="main-btn">Add to cart</button>
-                </div>
-            </div>
-            <footer class="bg-dark text-center text-white footer">
-                <div class="container p-4">
-                    <div class="social-media-container">
-                        <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
-                            role="button"><i class="fab fa-facebook-f"></i></a>
-
-                        <a class="btn btn-outline-light btn-floating m-1 social-media"
-                            href="https://twitter.com/?lang=en" role="button"><i class="fab fa-twitter"></i></a>
-
-                        <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.google.com/"
-                            role="button"><i class="fab fa-google"></i></a>
+                    <div class="warranty">
+                        <i class="fa fa-recycle"></i>
+                        <h4>Warranty</h4>
+                        <p>All products have a warranty of up to 48 months</p>
                     </div>
-                    <div class="footer-details">
-                        <div class="transport">
-                            <i class="fas fa-shuttle-van"></i>
-                            <h4>Free Transport</h4>
-                            <p>For orders larger than 10000€</p>
-                        </div>
-                        <div class="warranty">
-                            <i class="fa fa-recycle"></i>
-                            <h4>Warranty</h4>
-                            <p>All products have a warranty of up to 48 months</p>
-                        </div>
-                        <div class="payment">
-                            <i class="far fa-credit-card"></i>
-                            <h4>Payment</h4>
-                            <p>You can pay online with the help of a debit card</p>
-                        </div>
-                        <div class="support">
-                            <i class="fas fa-info-circle"></i>
-                            <h4>Support</h4>
-                            <p>We provide support and advice</p>
-                        </div>
+                    <div class="payment">
+                        <i class="far fa-credit-card"></i>
+                        <h4>Payment</h4>
+                        <p>You can pay online with the help of a debit card</p>
                     </div>
-                    <div class="copyright">
-                        <p>Copyright © amazing-laptops.com
-                            All rights reserved</p>
+                    <div class="support">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Support</h4>
+                        <p>We provide support and advice</p>
                     </div>
                 </div>
-            </footer>
-            <script src="./src/app.js"></script>
+                <div class="copyright">
+                    <p>Copyright ©laptop.com
+                        All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
