@@ -2,7 +2,7 @@ const productTableBody = document.querySelector('.admin-products-table');
 const btnAddNewProduct = document.querySelector('.add-new-product');
 const btnUpdateProduct = document.querySelector('.update-product');
 
-const productsURL = 'https://61e546dc595afe00176e5480.mockapi.io/Products';
+const productsURL = 'https://62bb213b7bdbe01d52983148.mockapi.io/Front';
 
 //GET
 window.addEventListener('load', getAllProducts);
@@ -20,8 +20,8 @@ async function getAllProducts() {
             <td >${product.name}</td>
 			<td>${product.price}€</td>
 			<td>${product.description}</td>
-            <td><button class="btn btn-danger delete" data-product-id=${product.id}>X</button></td>
-            <td><button class="btn btn-info edit" data-product-id=${product.id}>✎</button></td>
+            <td><button class="btn btn-danger delete" data-product-id=${product.id}>Delete</button></td>
+            <td><button class="btn btn-info edit" data-product-id=${product.id}>Edit</button></td>
           </tr>`
 		)
 		.join('');
@@ -75,8 +75,8 @@ async function addNewProduct(event) {
 	<td>${product.name}</td>
 	<td>${product.price}€</td>
 	<td>${product.description}</td>
-	<td><button class="btn btn-danger" data-product-id=${product.id}>X</button></td>
-	<td><button class="btn btn-info" data-product-id=${product.id}>✎</button></td>
+	<td><button class="btn btn-danger" data-product-id=${product.id}>Delete</button></td>
+	<td><button class="btn btn-info" data-product-id=${product.id}>Edit</button></td>
   </tr>`;
 
 	productTableBody.innerHTML += newProductTableRow;
@@ -86,7 +86,7 @@ async function addNewProduct(event) {
 
 btnUpdateProduct.addEventListener('click', updateProduct);
 
-//POST
+//PUT
 async function updateProduct(event) {
 	event.preventDefault();
 	const productImage = document.getElementById('image').value;
