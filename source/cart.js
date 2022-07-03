@@ -1,5 +1,3 @@
-
-
 //update nav-cart
 function updateCartInfo(cart) {
 	let cartInfo = 0;
@@ -8,7 +6,7 @@ function updateCartInfo(cart) {
 	});
 	document.querySelector('.cart-info').innerHTML = cartInfo;
 }
-
+//get cart
 window.addEventListener('load', () => {
 	const cart = JSON.parse(localStorage.getItem('cart'));
 	//total price
@@ -22,7 +20,7 @@ window.addEventListener('load', () => {
 		const productsCards = cart
 			.map(
 				(product) =>
-					`<div class="card w-75 mt-4 mx-auto">
+				`<div class="card w-75 mt-4 mx-auto">
               <div class="card-body mx-auto">
 			  <img class="card-img img-fluid" style="width:400px;" src="${product.image}" alt="Product Image"/>
                <h6 class="card-title text-center mt-2">${product.name}</h6>
@@ -42,9 +40,9 @@ window.addEventListener('load', () => {
 		document.querySelector('.cart-container').innerHTML = productsCards;
 		document.querySelector('.total-price-container').innerHTML = totalPriceCard;
 		updateCartInfo(cart);
-
+	
 	}
-
+	
 });
 
 // increment and decrement buttons
@@ -86,13 +84,14 @@ function handleCartEvents(event) {
 		let totalPriceCard = `<div class="total-price">TOTAL: ${total} €</div>`;
 		document.querySelector('.total-price-container').innerHTML = totalPriceCard;
 	}
-	if (cart.length >= 0) {
+	//hide price, display empty banner
+	if (cart.length <= 0) {
 		localStorage.removeItem('cart', JSON.stringify(cart));
 		let removeBanner = document.querySelector('.hide-containers');
 		let removeTotalPrice = document.querySelector('.total-price-container');
 		removeTotalPrice.classList.add('hide-containers');
 		removeBanner.classList.remove('hide-containers');
 	}
-
+	
 }
 
