@@ -1,5 +1,8 @@
+import searchResults from './search.js';
+
+//get all products
 window.addEventListener('load', async () => {
-	const productsURL = 'https://61e546dc595afe00176e5480.mockapi.io/Products';
+	const productsURL = 'https://62bb213b7bdbe01d52983148.mockapi.io/Front';
 	const result = await fetch(productsURL);
 	const products = await result.json();
 
@@ -9,13 +12,13 @@ window.addEventListener('load', async () => {
 		.map(
 			(product) =>
 				`<div class="card">
-                 <div class="card-body sm">
+                 <div class="card-body">
                  <img class="card-img img-fluid" src="${product.image}" alt="Product Image"/>
-                  <h5 class="card-title d-flex justify-content-center" style= "font-size: 1rem;">${product.name}</h5>
-                  <p class="card-text d-flex justify-content-center">${product.price} €</p>
+                  <h5 class="card-title">${product.name}</h5>
+                  <p class="card-text price">${product.price} €</p>
 				  <div class="buttons">
-                  <a href="details.html?product-id=${product.id}" class="main-btn">Details</a>
-				  <button data-product-id=${product.id} class="main-btn">Add to cart</button>
+                  <a href="details.html?product-id=${product.id}" class="main-btn btn-responsive"  role="button">Details</a>
+				  <button data-product-id=${product.id} class="main-btn btn-responsive">Add to cart</button>
                </div>
 			   </div>
             </div>`
@@ -25,12 +28,13 @@ window.addEventListener('load', async () => {
 	productsContainer.innerHTML = cards;
 });
 
+//add to cart
 document.querySelector('.products-container').addEventListener('click', addToCart);
 async function addToCart(event) {
 	const addToCartBtn = event.target;
 	let productId = addToCartBtn.getAttribute('data-product-id');
 
-	const productsURL = 'https://61e546dc595afe00176e5480.mockapi.io/Products/${productId}';
+	const productsURL = `https://62bb213b7bdbe01d52983148.mockapi.io/Front${productId}`;
 	const result = await fetch(productsURL);
 	const product = await result.json();
 
@@ -63,3 +67,4 @@ async function addToCart(event) {
 		document.querySelector('.cart-info').innerHTML = cartInfo;
 	}
 }
+
