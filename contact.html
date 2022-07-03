@@ -1,133 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Laptops</title>
+    <link rel="icon" type="image/x-icon" href="./icons/logo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Laptop Contact</title>
 </head>
-
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-8 logo">
-                <a href="index.html"> <img src="./icons/logo.png" /></a>
-            </div>
-            <div class="col-4">
-                <div class="row wrapper">
-                    <div class="col-3">
-                        <div class="cart">
-                            <a href="cart.html">
-                                <i class="fas fa-shopping-cart menu-icon"></i>CART<span class="cart-info"></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="admin">
-                            <a href="admin.html">
-                                <i class="fas fa-user-cog menu-icon"></i>ADMIN
-                            </a>
-                        </div>
+        <a href="index.html"> <img src="./icons/logo.png" /></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: lightblue">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./icons/logo.png" height="50" alt="Best-Brand">
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">INDEX</a>
+                        <i class="fa-solid fa-indent"></i>
+                        <a href="cart.html" class="nav-item nav-link">CART</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                        <i class="fa-solid fa-address-book"></i>
+                        <a href="admin.html" class="nav-item nav-link">ADMIN</a>
+                        <i class="fa-solid fa-lock"></i>
+                        <a href="details.html" class="nav-item nav-link">DETAILS</a>
+                        <i class="fa-solid fa-asterisk"></i>
+                        <form class="d-flex ms-auto">
+                            <input type="text" class="form-control me-sm-2" placeholder="Search">
+                            <button type="submit" class="btn btn-outline-primary">Search</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Categories
-                            </a>
-                            <ul class="dropdown-menu" id="myDropdown" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" id="face-products" href="index.html">ASUS</a>
-                                </li>
-                                <li><a class="dropdown-item" href="index.html" id="products">LENOVO</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="index.html" id="products">LG</a></li>
-                                <li><a class="dropdown-item" href="index.html" id="products">HP</a></li>
-                            </ul>
-                        </div>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" id="search-bar" placeholder="Search"
-                            aria-label="Search">
-                        <!-- <button class="btn btn-outline-success" id = "search-button" type="submit">Search</button> -->
-                    </form>
                 </div>
             </div>
         </nav>
         <div class="contact">
             <div class="col-5 contact-info">
                 <h4>Contact Info</h4>
-                <p><i class="fa fa-map-marker"></i>Bucuresti, Blv. Victoriei, nr.15</p>
-                <p><i class="fas fa-phone"></i> +40 750 159 843</p>
-                <p><i class="fas fa-envelope-open"></i> amazing-laptops@gmail.com</p>
+                <p><i class="fa fa-map-marker"></i> București, Bulevardul Tineretului nr.20</p>
+                <p><i class="fas fa-phone"></i> +40 745 187 324</p>
+                <p><i class="fas fa-envelope-open"></i> laptop-shop@gmail.com</p>
             </div>
-
+            
             <div class="row about">
-                <h4>About electronic products</h4>
-                <p>Magazin online cu calculatoare second hand, monitoare second hand, laptopuri second hand. Oferim
-                    garantie la toate produsele second hand si refurbished.</p>
-
+                <h4>About Laptop shop products</h4>
+                <p>We started from humble beginnings back in 1999 with a small shop in Huddersfield and we’ve quickly grown to become the UKs largest online laptop specialist. We’re still based in Huddersfield but we now have a huge head office which features a massive showroom showing off the latest laptops, netbooks, tablets, TVs and kitchen appliances. We also have a purpose built distribution centre in Huthwaite where we despatch well over 1000 orders every day!
+                   We’re passionate about what we do and it’s our mission is to bring you the best deals in the UK from all the leading brands, whilst also offering the best possible advice through our specialist trained sales team who collectively have over 100 years experience. We’re not going anywhere! Unlike some of our competitors we don’t have shareholders so we can focus on giving you our best possible deals and prices rather than trying to make money to pay bonuses!
+                   We’ve grown every year since entering the online market in 2000 and we don’t intend to stop. 
+                   If you want to look at the other businesses we operate please click here to visit our Buy it Direct Group page. </p>
+                
 
             </div>
         </div>
     </div>
-    <footer class="bg-dark text-center text-white footer">
-        <div class="container p-4">
-            <div class="social-media-container">
-                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
-                    role="button"><i class="fab fa-facebook-f"></i></a>
-
-                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://twitter.com/?lang=en"
-                    role="button"><i class="fab fa-twitter"></i></a>
-
-                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.google.com/"
-                    role="button"><i class="fab fa-google"></i></a>
+        <footer class="bg-dark text-center text-white footer">
+            <div class="container p-4">
+                <div class="social-media-container">
+                    <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
+                        role="button"><i class="fab fa-facebook-f"></i></a>
+    
+                    <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://twitter.com/?lang=en"
+                        role="button"><i class="fab fa-twitter"></i></a>
+                        <div class="footer-details">
+                            <div class="transport">
+                                <i class="fas fa-shuttle-van"></i>
+                                <h4>Free Transport</h4>
+                                <p>For orders larger than 1000€</p>
+                            </div>
+                            <div class="warranty">
+                                <i class="fa fa-recycle"></i>
+                                <h4>Warranty</h4>
+                                <p>All products have a warranty of up to 48 months</p>
+                            </div>
+                            <div class="payment">
+                                <i class="far fa-credit-card"></i>
+                                <h4>Payment</h4>
+                                <p>You can pay online with the help of a debit card</p>
+                            </div>
+                            <div class="support">
+                                <i class="fas fa-info-circle"></i>
+                                <h4>Support</h4>
+                                <p>We provide support and advice</p>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright ©laptop.com
+                                All rights reserved</p>
+                        </div>
+                        </div>
             </div>
-            <div class="footer-details">
-                <div class="transport">
-                    <i class="fas fa-shuttle-van"></i>
-                    <h4>Free Transport</h4>
-                    <p>For orders larger than 10000€</p>
-                </div>
-                <div class="warranty">
-                    <i class="fa fa-recycle"></i>
-                    <h4>Warranty</h4>
-                    <p>All products have a warranty of up to 48 months</p>
-                </div>
-                <div class="payment">
-                    <i class="far fa-credit-card"></i>
-                    <h4>Payment</h4>
-                    <p>You can pay online with the help of a debit card</p>
-                </div>
-                <div class="support">
-                    <i class="fas fa-info-circle"></i>
-                    <h4>Support</h4>
-                    <p>We provide support and advice</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © amazing-laptops.com
-                    All rights reserved</p>
-            </div>
-        </div>
-    </footer>
-    <script src="./src/app.js"></script>
+            </footer>
+            <script src="app.js"></script>    
 </body>
-
 </html>
