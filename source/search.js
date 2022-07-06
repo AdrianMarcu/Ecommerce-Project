@@ -1,4 +1,4 @@
-let searchInput = document.getElementsByClassName('.form-control me-sm-2');
+let searchInput = document.getElementById('search-bar');
 let resultsContainer = document.querySelector('.products-container');
 searchInput.addEventListener('input', searchResults);
 
