@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./icons/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Laptop Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html"> <img src="./icons/logo.png" /></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: lightblue">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./icons/logo.png" height="50" alt="Best-Brand">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">INDEX</a>
+                        <i class="fa-solid fa-indent"></i>
+                        <a href="cart.html" class="nav-item nav-link">CART</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                        <i class="fa-solid fa-address-book"></i>
+                        <a href="admin.html" class="nav-item nav-link">ADMIN</a>
+                        <i class="fa-solid fa-lock"></i>
+                        <a href="details.html" class="nav-item nav-link">DETAILS</a>
+                        <i class="fa-solid fa-asterisk"></i>
+                        <form class="d-flex ms-auto">
+                            <input type="text" class="form-control me-sm-2" placeholder="Search">
+                            <button type="submit" class="btn btn-outline-primary">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 1.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">ASUS</h6>
+                <p class="card-text-center fs-5">2400.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="1" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="1" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="1" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 2.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">HP</h6>
+                <p class="card-text-center fs-5">2900.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="2" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="2" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="2" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 3.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">ACER</h6>
+                <p class="card-text-center fs-5">2200.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="3" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="3" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="3" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 4.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">TOSHIBA</h6>
+                <p class="card-text-center fs-5">3000.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="4" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="4" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="4" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 5.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">DELL</h6>
+                <p class="card-text-center fs-5">4000.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="5" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="5" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="5" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 6.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">DELL</h6>
+                <p class="card-text-center fs-5">5000.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="6" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="6" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="6" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 7.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">ASUS</h6>
+                <p class="card-text-center fs-5">3500.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="7" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="7" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="7" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 8.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">ACER</h6>
+                <p class="card-text-center fs-5">4500.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="8" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="8" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="8" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 9.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">HP</h6>
+                <p class="card-text-center fs-5">6000.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="9" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="9" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="9" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <br>
+    <div class="cart-container">
+        <div class="card auto">
+            <div class="card-body-auto">
+                <img class="card-img img-fluid" src="./pictures/Laptop 10.jpeg" alt="Product Image">
+                <h6 class="card-title text-center mt-2">ASUS</h6>
+                <p class="card-text-center fs-5">7600.00€</p>
+                <p class="card-text text-center">Quantity:
+                    <button data-product-id="10" class="remove-products cart-btn"> - </button>
+                    <span class="cart-products">1</span>
+                    <button data-product-id="10" class="add-products cart-btn"> + </button>
+                </p>
+            </div>
+            <button type="button" data-product-id="10" class="empty-cart"> EMPTY CART </button>
+        </div>
+    </div>
+    <br>
+    <div class="total-price-container">
+        <div class="total-price">TOTAL: €</div>
+    </div>
+    <footer class="bg-dark text-center text-white footer">
+        <div class="container p-4">
+            <div class="social-media-container">
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://www.facebook.com/"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1 social-media" href="https://twitter.com/?lang=en"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <div class="footer-details">
+                    <div class="transport">
+                        <i class="fas fa-shuttle-van"></i>
+                        <h4>Free Transport</h4>
+                        <p>For orders larger than 1000€</p>
+                    </div>
+                    <div class="warranty">
+                        <i class="fa fa-recycle"></i>
+                        <h4>Warranty</h4>
+                        <p>All products have a warranty of up to 48 months</p>
+                    </div>
+                    <div class="payment">
+                        <i class="far fa-credit-card"></i>
+                        <h4>Payment</h4>
+                        <p>You can pay online with the help of a debit card</p>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Support</h4>
+                        <p>We provide support and advice</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright ©laptop.com
+                        All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="source/cart.js"></script>
+</body>
+
+</html>
