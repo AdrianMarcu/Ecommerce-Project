@@ -1,4 +1,6 @@
-import searchResults from './search.js';
+import searchResults from 'source/search.js';
+let searchInput = document.getElementById('search-bar');
+searchInput.addEventListener('change', searchResults);
 
 //get all products
 window.addEventListener('load', async () => {
