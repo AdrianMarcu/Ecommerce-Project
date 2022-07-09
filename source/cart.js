@@ -1,5 +1,6 @@
 //update nav-cart
 function updateCartInfo(cart) {
+	if (!cart) return
 	let cartInfo = 0;
 	cart.forEach((product) => {
 		cartInfo = cartInfo + product.noOfProducts;
@@ -52,11 +53,13 @@ cartContainer.addEventListener('click', handleCartEvents);
 function handleCartEvents(event) {
 	const targetButton = event.target;
 	let cart = JSON.parse(localStorage.getItem('cart'));
-
-	const productInCart = cart.find(
+if (!cart) {
+	cart = []
+} 
+	const productInCart = cart? cart.find(
 		(productFromCart) =>
 			productFromCart.id == targetButton.getAttribute('data-product-id')
-	);
+	):0;
 
 	let quantityParagraph = targetButton.parentNode;
 
