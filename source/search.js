@@ -1,6 +1,6 @@
-let searchInput = document.getElementById('search-bar');
+
 let resultsContainer = document.querySelector('.products-container');
-searchInput.addEventListener('input', searchResults);
+
 
 async function searchResults(event) {
 	event.preventDefault();
