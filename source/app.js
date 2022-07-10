@@ -1,4 +1,4 @@
-import searchResults from 'source/search.js';
+import searchResults from '/source/search.js';
 let searchInput = document.getElementById('search-bar');
 searchInput.addEventListener('change', searchResults);
 
