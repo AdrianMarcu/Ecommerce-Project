@@ -16,7 +16,7 @@ async function getAllProducts() {
 			(product) =>
 				`<tr class="table-products">
             <th scope="row">${product.id}</th>
-			<td><img class="card-img img-fluid" style="width:100px;" src="${product.image}" alt="Product Image"/></td>
+			<td><img class="img-fluid" style="width:100px;" src="${product.image}" alt="Product Image"/></td>
             <td >${product.name}</td>
 			<td>${product.price}€</td>
 			<td>${product.description}</td>
@@ -71,7 +71,7 @@ async function addNewProduct(event) {
 
 	let newProductTableRow = `<tr>
 	<th scope="row">${product.id}</th>
-	<td><img class="card-img-top img-fluid" style="width:250px;" src="${product.image}" alt="Product Image"/></td>
+	<td><img class="img-fluid" style="width:100px;" src="${product.image}" alt="Product Image"/></td>
 	<td>${product.name}</td>
 	<td>${product.price}€</td>
 	<td>${product.description}</td>

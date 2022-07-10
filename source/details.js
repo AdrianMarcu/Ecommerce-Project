@@ -5,23 +5,26 @@ window.addEventListener('load', async () => {
 	const searchParam = new URLSearchParams(searchParamString);
 	const productId = searchParam.get('product-id');
 
-	const productsURL = `https://62bb213b7bdbe01d52983148.mockapi.io/Front${productId}`;
+	const productsURL = `https://62bb213b7bdbe01d52983148.mockapi.io/Front/${productId}`;
 	const result = await fetch(productsURL);
 	const product = await result.json();
 
 	const productCard = `
-				<div class="card">
 				<div class="card-body">
-                <img class="card-img img-fluid" src="${product.image}" alt="Product Image"/>
-	  			<h5 class="card-title">${product.name}</h5>
-                <p class="card-text price">${product.price} €</p>
-	  			<p class="card-text  description-details">${product.description}</p>
-				<p class="card-text text-center"><i class="far fa-credit-card"></i> Secure payment</p>
-			    <p class="card-text text-center me-4"><i class="fas fa-shuttle-van"></i> Fast delivery</p>
-			    <p class="card-text  text-center"><i class="fas fa-exchange-alt"></i> Return possible</p>
-	  			<button data-product-id=${product.id} class="main-btn">Add to cart</button>
-			</div>
- 		</div>`;
+					<div class="row">
+						<div class="col-md-4">
+							<img class="card-img img-fluid" src="${product.image}" alt="Product Image">                                    
+						</div>
+						<div class="col-md-8 d-inline-flex justify-content-center flex-column">
+							<h1 class="card-title">${product.name}</h5>
+							<h3 class="card-text price">${product.price} €</h3>
+							<p>${product.description}</p>
+							<div class="buttons">
+								<button data-product-id="${product.id}" class="btn btn-primary">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>`;
 
 	document.querySelector('.product-details').innerHTML = productCard;
 });
@@ -32,7 +35,7 @@ async function addToCart(event) {
 	const addToCartBtn = event.target;
 	let productId = addToCartBtn.getAttribute('data-product-id');
 
-	const productsURL = `https://62bb213b7bdbe01d52983148.mockapi.io/Front${productId}`;
+	const productsURL = `https://62bb213b7bdbe01d52983148.mockapi.io/Front/${productId}`;
 	const result = await fetch(productsURL);
 	const product = await result.json();
 	

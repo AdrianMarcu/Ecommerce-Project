@@ -21,23 +21,29 @@ window.addEventListener('load', () => {
 		const productsCards = cart
 			.map(
 				(product) =>
-				`<div class="card w-75 mt-4 mx-auto">
-              <div class="card-body mx-auto">
-			  <img class="card-img img-fluid" style="width:400px;" src="${product.image}" alt="Product Image"/>
-               <h6 class="card-title text-center mt-2">${product.name}</h6>
-              <p class="card-text text-center fs-5">${product.price} €</p>
-              <p class="card-text text-center">Quantity:
-			  <button data-product-id=${product.id} class="remove-products cart-btn"> - </button>
-		    <span class="cart-products"> ${product.noOfProducts}</span>
-			<button data-product-id=${product.id} class="add-products cart-btn"> + </button>
-			</p>
-        </div>
-		<button type=button data-product-id=${product.id} class="empty-cart"> EMPTY CART </button>
-        </div>`
+				`
+				<div class="row">
+                    <div class="col-md-3 d-inline-flex justify-content-center align-items-center">
+                        <img class="card-img img-fluid" src="${product.image}" alt="Product Image">
+                    </div>
+                    <div class="col-md-3 d-inline-flex justify-content-center align-items-center flex-column">
+                        <h1>${product.name}</h1>
+                    </div>
+                    <div class="col-md-3 d-inline-flex justify-content-center align-items-center">
+                        <p class="card-text text-center">Quantity:
+                            <button data-product-id="${product.id}" class="remove-products cart-btn"> - </button>
+                            <span class="cart-products">${product.noOfProducts}</span>
+                            <button data-product-id="${product.id}" class="add-products cart-btn"> + </button>
+                        </p>
+                    </div>
+                    <div class="col-md-3 d-inline-flex justify-content-center align-items-center">
+                        Price: <h2>${product.price} €</h2>
+                    </div>
+                </div>`
 			)
 			.join('');
 
-		let totalPriceCard = `<div class="total-price">TOTAL: ${total} €</div>`;
+		let totalPriceCard = `<div class="total-price"><h1>TOTAL: ${total} €</h1></div>`;
 		document.querySelector('.cart-container').innerHTML = productsCards;
 		document.querySelector('.total-price-container').innerHTML = totalPriceCard;
 		updateCartInfo(cart);
@@ -84,7 +90,7 @@ if (!cart) {
 		cart.forEach((product) => {
 			total = total + Number(product.price) * product.noOfProducts;
 		});
-		let totalPriceCard = `<div class="total-price">TOTAL: ${total} €</div>`;
+		let totalPriceCard = `<div class="total-price"><h1>TOTAL: ${total} €</h1></div>`;
 		document.querySelector('.total-price-container').innerHTML = totalPriceCard;
 	}
 	//hide price, display empty banner
